@@ -23,6 +23,7 @@
 
     Version history:
     2021-01-23        v1.0.0        First release to GitHub.
+    2021-04-07        v1.0.1        Solved a problem with serial output.
 
 */
 
@@ -157,8 +158,7 @@ void loop() {
         Serial.print(supplyVoltage, 0);
         Serial.println("V");
       } else {
-        Serial.print("Waiting for sensor to heat up...");
-        Serial.println(SPN3229);
+        Serial.println("Waiting for sensor to heat up...");
       }
 
       //Output temperature status to LED.
